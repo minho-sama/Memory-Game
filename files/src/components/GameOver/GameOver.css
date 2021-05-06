@@ -1,0 +1,54 @@
+.gameOver-box{
+    padding: 10px;
+    background-color: rgb(36, 36, 36);
+    /* box-shadow: 10px 10px rgb(0, 0, 0); */
+    box-shadow: 0px 15px 30px rgb(0 0 0 / 25%);
+    border-radius: 3px;
+    color:white;
+    font-size: 18px;
+    width: 50%;
+    margin: 100px 25% auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: 0.2s;
+}
+
+.gameOver-box h1{
+    text-shadow: 2px 2px 4px #000000;
+    color:rgb(226, 226, 19);
+}
+
+.gameOver-box button{
+    font-size: 25px;
+    padding: 10px;
+    transition: 0.2s;
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.gameOver-box button:hover{
+    transform: scale(1.1);
+    background: white;
+    color:black;
+}
+
+.gameOver-box:hover{
+    background-color: rgb(44, 44, 44);
+}
+
+@media only screen and (max-width: 900px){
+    .gameOver-box{
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+        gap: 40px;
+    }
+    .gameOver-box h1{
+        margin-bottom: 50px;
+    }
+}

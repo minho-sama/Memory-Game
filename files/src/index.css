@@ -12,10 +12,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background-image: linear-gradient(2deg,rgb(56, 55, 55) 23.8%,rgb(48, 47, 47) 90%) */
   background-color: rgb(58, 58, 58);
-  overflow-y: hidden;
-  overflow-x: hidden;
   scrollbar-width: none;  /* Firefox */
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

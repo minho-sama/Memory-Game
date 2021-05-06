@@ -13,6 +13,10 @@ h2{
     color:rgb(226, 226, 19);
 }
 
+.title-container{
+    position:relative;
+}
+
 .scoreBoard{
     position: absolute;
     bottom: 7px;
@@ -34,15 +38,31 @@ a:hover{
     text-decoration: underline;
 }
 
+.ring-icon{
+    position: absolute;
+    right: 27%;
+    bottom: 10%;
+    color:rgb(226, 226, 19);
+    font-size: 30px;
+}
+
 @media only screen and (max-width: 900px){
-    header{
-        box-shadow: none;
-    }
-    
     a, .scoreBoard{
         position:unset;
     }
     h2{
         margin: unset;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .ring-icon{
+        right: 20%;
+    }
+}
+
+@media only screen and (max-width: 1120px){
+    .ring-icon{
+        display: none;
     }
 }
