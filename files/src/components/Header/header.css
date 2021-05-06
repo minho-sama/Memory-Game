@@ -1,0 +1,48 @@
+header{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h2{
+    font-size: 35px;
+    margin-top: 0px;
+    color:rgb(226, 226, 19);
+}
+
+.scoreBoard{
+    position: absolute;
+    bottom: 7px;
+    left: 30px;
+}
+
+.scoreBoard span{
+    color:rgb(226, 226, 19);
+}
+
+a{
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px){
+    header{
+        box-shadow: none;
+    }
+    
+    a, .scoreBoard{
+        position:unset;
+    }
+    h2{
+        margin: unset;
+    }
+}
